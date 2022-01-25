@@ -17,5 +17,6 @@ jobs:
 
     # Run our deployment command
     - name: Deploying the static website to gh-pages
+      uses: actions/setup-node@v1
     - run: npm ci
     - run: npm run deploy
